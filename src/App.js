@@ -56,7 +56,7 @@ export default class App extends Component  {
       const updatedList = prevState.todoList.filter((task) => task.id !== taskId);
 
       const completedCount = updatedList.filter((task) => task.completed).length;
-
+      
 
       return {
         todoList: updatedList,
@@ -65,6 +65,13 @@ export default class App extends Component  {
 
     })
    
+  };
+
+  deleteAllTasks = () => {
+    this.setState(({
+      todoList: [],
+      completedTaskCount: 0,
+    }));
   };
 
 
@@ -88,6 +95,7 @@ export default class App extends Component  {
             todoList={this.state.todoList} 
             toggleTaskCompleted={this.toggleTaskCompleted}
             todoId={this.todoId}
+            deleteAllTasks={this.deleteAllTasks}
           /> 
          
         </div>

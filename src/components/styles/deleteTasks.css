@@ -1,5 +1,5 @@
 .delete-taskBtn {
-    background-color: #87d368;; 
+    background-color: #87d368; 
     color: white;
     border: none;
     border-radius: 10px;
@@ -13,4 +13,21 @@
     background-color: #47c316;
     transition: ease-in-out 0.2s;
     box-shadow: inset 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .delete-all-btn {
+    margin-top: 30px;
+    margin-left: 14rem;
+    padding: 10px 20px;
+    background-color: #87d368;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-all-btn:hover {
+    background-color: rgb(3, 183, 3);
   }

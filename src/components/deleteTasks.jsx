@@ -23,7 +23,6 @@ export default class DeleteTasks extends Component  {
                 >
                     Delete
                 </button>
-                
 
                </>
             

@@ -27,7 +27,7 @@ export default class TodoList extends Component {
     }
 
     render() {
-        const {todoList, deleteTasks, toggleTaskCompleted} = this.props
+        const {todoList, deleteTasks, toggleTaskCompleted, deleteAllTasks} = this.props
         const { activeKeyTask } = this.state
 
         return (
@@ -51,6 +51,13 @@ export default class TodoList extends Component {
                             </li>
                         ))}
                 </ul>
+
+                <button 
+                className="delete-all-btn"
+                 onClick={deleteAllTasks}
+                >
+                    Delete All
+                </button>
             </div>
         )
     }
