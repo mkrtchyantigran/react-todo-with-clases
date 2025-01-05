@@ -1,0 +1,48 @@
+
+.add-new-todo {
+   
+
+
+    h3{
+      font-size: 40px;
+      text-align: center;
+      color: rgb(44, 204, 44); /* Green color */
+      text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2)
+      }
+
+      .add-new-todo-group {
+        display: flex;
+    
+        input {
+          flex: 1;
+          padding: 12px 24px;
+          min-width:13rem;
+          border: 1 solid white;
+          border-radius: 10px 0 0 10px ;
+        }
+        
+        
+    
+        button {
+          background: rgb(3, 183, 3);
+          color: white;
+          padding: 12px 24px;
+          cursor: pointer;
+          border: none;
+          border-radius: 0 10px 10px 0;
+        }
+
+        button:hover {
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+          transition: ease-in-out 0.3s;
+        }
+        
+
+      }
+
+     
+
+}
+
+
+
